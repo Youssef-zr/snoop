@@ -13,10 +13,14 @@
 
 <body>
 
+    <!-- load icon -->
+    <div class="load-icon">
+        <i class="fa fa-refresh fa-spin fa-3x"></i>
+    </div>
     <!-- Start canvas section -->
     <section id="section-header">
         <!-- Start navigation -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div class="container justify-content-lg-center">
                 <a class="navbar-brand d-lg-none" href="#">
                     <img src="img/logo.png" alt="logo" class="img-responsive">
@@ -30,21 +34,27 @@
                 <div class="collapse navbar-collapse" id="navbarColor02">
                     <ul class="navbar-nav mx-auto d-flex align-items-center mt-4 mt-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Home</a>
+                            <a class="nav-link" href="#" data-section="#section-header">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
+                            <a class="nav-link" href="#" data-section="#section-comming">CommingSoon</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-section="#section-tweets">Tweets</a>
                         </li>
                         <li class="nav-item nav-logo d-none d-lg-block">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link not-link" href="#">
                                 <img src="img/logo.png" alt="logo img" class="img-responsive">
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Privacy</a>
+                            <a class="nav-link" href="#" data-section="#section-tokenomics">Tokenomics</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link" href="#" data-section="#section-exchange">EXCHANGE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-section="#section-map">Map</a>
                         </li>
                     </ul>
                 </div>
@@ -113,7 +123,7 @@
     <!-- End canvas section -->
 
     <!-- Start section comming Soon -->
-    <section class="section-comming py-lg-3  mt-5 mb-4">
+    <section class="section-comming py-lg-3  mt-5 mb-4" id="section-comming">
         <!-- comming boxs -->
         <div class="comming-box">
             <div class="container">
@@ -215,7 +225,7 @@
     <hr>
 
     <!-- Start section tweets -->
-    <section class="section-tweets py-4">
+    <section class="section-tweets py-4" id="section-tweets">
         <div class="container">
             <div class="row">
                 <div class="col-10 col-lg-6 mx-auto">
@@ -253,7 +263,7 @@
     <!-- End section tweets -->
 
     <!-- Start section tokenomics -->
-    <section class="tokenomics">
+    <section class="tokenomics" id='section-tokenomics'>
         <div class="container">
 
             <h5 class="headline">
@@ -320,7 +330,7 @@
     <hr>
 
     <!-- Start Section Exchange -->
-    <section class="exchange py-5">
+    <section class="exchange py-5" id="section-exchange">
         <div class="container">
             <div class="row">
                 <!-- Exchange left section -->
@@ -346,7 +356,7 @@
                     </div>
                 </div>
                 <!-- Exchange right section -->
-                <div class="mt-4 mt-md-0 col-sm-8 col-md-5">
+                <div class="mt-5 mt-md-0 col-10 mx-auto col-sm-8 mx-sm-0 col-md-5">
                     <div class="exchange-right-section pl-lg-5">
                         <img src="img/Snoop-exchange.png" alt="Exchange image" class="img-responsive">
                     </div>
@@ -357,7 +367,7 @@
     <!-- End Section Exchange -->
 
     <!-- Start moon map -->
-    <section class="moon">
+    <section class="moon" id="section-map">
         <div class="container">
             <h4 class="headline">
                 <b>MoonMap</b>
@@ -365,14 +375,13 @@
             <div class="row py-5">
                 <div class="col-10 col-md-8 mx-auto">
                     <p class="text text-white text-center" style="font-size: 18px;">
-                            SnoopDoge is scheduled to launch in august 2021. We plan to become
-                            one of the most popular cryptocurrencies of 2021. This Moonmap is a
-                            breathing document that lays out key milestones the community aims to
-                            hit to continue rapid and decentralized development and moonlike
-                            features!
+                        SnoopDoge is scheduled to launch in august 2021. We plan to become
+                        one of the most popular cryptocurrencies of 2021. This Moonmap is a
+                        breathing document that lays out key milestones the community aims to
+                        hit to continue rapid and decentralized development and moonlike
+                        features!
                     </p>
                 </div>
-
 
             </div>
             <div class="moon-timeline">
@@ -395,14 +404,14 @@
                                                     <p class="d-flex" style="font-size:17px">
                                                         <i class="fa fa-check-circle mr-2 mt-1"></i>
                                                         100,000 Holders
-                                                        SnoopDoge  Crate (NFT Marketplace)
+                                                        SnoopDoge Crate (NFT Marketplace)
                                                     </p>
                                                 </div>
                                                 <div class="col-12 mb-3">
                                                     <p class="d-flex" style="font-size:17px">
                                                         <i class="fa fa-check-circle mr-2 mt-1"></i>
-                                                        SnoopDoge  Paw Print (Wallet Tracker)
-                                                        SnoopDoge  sWag (Merchandise Store)
+                                                        SnoopDoge Paw Print (Wallet Tracker)
+                                                        SnoopDoge sWag (Merchandise Store)
                                                     </p>
                                                 </div>
                                                 <div class="col-12 mb-3">
@@ -438,7 +447,7 @@
                                                 <div class="col-12 mb-3">
                                                     <p class="d-flex" style="font-size:17px">
                                                         <i class="fa fa-check-circle mr-2 mt-1"></i>
-                                                        SnoopDoge  Swap (Decentralize Exchange)
+                                                        SnoopDoge Swap (Decentralize Exchange)
                                                     </p>
                                                 </div>
                                                 <div class="col-12 mb-3">
@@ -604,13 +613,37 @@
                     <img src="img/merch/hoodiesnoopdogeBETA_1080x.png" class="img-responsive" alt="img merch 1">
                 </div>
                 <div class="col-8 mx-auto col-sm-6 mt-5 mt-sm-0">
-                    <img src="img/merch/tshirt1go_1080x.png" class="img-responsive" alt="img merch 1">
+                    <img src="img/merch/tface1.png" class="img-responsive" alt="img merch 1">
                 </div>
             </div>
         </div>
     </section>
     <!-- End section merch -->
-    <br><br><br><br><br>
+
+    <!-- Start section copyright -->
+    <footer class="border-top bg- pt-2 pb-3 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-8 mx-auto  mb-2 col-md-3 mb-md-0 col-lg-2">
+                    <img src="img/s.png" alt="dog img" class="img-responsive" style="width:70%">
+                </div>
+
+                <div class="col-md-9 col-lg-10 d-flex align-items-center justify-content-center">
+                    <h5 class="text-center text-capitalize" style="font-size:17px">
+                        Snoop doge &copy; all right reserved 2021
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End section copyright -->
+
+    <!-- Start button scrollTop -->
+    <div class="button-top">
+        <i class="fa fa-chevron-up"></i>
+    </div>
+    <!-- End button scrollTop -->
+
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/particles.min.js"></script>

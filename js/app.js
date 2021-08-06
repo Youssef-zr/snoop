@@ -12,8 +12,7 @@ particlesJS.load('particles-js', 'particles.json', function() {
 /* Otherwise just put the config content (json): */
 
 $(() => {
-
-  if ($(window).width() >= 1200) {
+  function particles() {
     particlesJS('section-header',
       {
         "particles": {
@@ -135,4 +134,20 @@ $(() => {
 
     );
   }
+
+  if ($(window).width() >= 1200) {
+    particles();
+  } else {
+    $("canvas").hide()
+  }
+
+  $(window).resize(() => {
+
+    if ($(window).width() >= 1200) {
+      particles();
+    } else {
+
+      $("canvas").hide()
+    }
+  })
 })
