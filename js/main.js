@@ -3,5 +3,4 @@ $(() => {
         $('.navbar-collapse').slideToggle(500)
     })
 
-
 })
