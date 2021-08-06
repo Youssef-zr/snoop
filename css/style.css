@@ -87,10 +87,10 @@ html:not([class='.card-body']) {
   overflow-y: scroll;
   max-height: 300px;
   scrollbar-width: thin;
-  scrollbar-color: #2a9fd6  transparent !important;
-  --moz-scrollbar-color: #2a9fd6  transparent !important;
+  scrollbar-color: #2a9fd6 transparent !important;
+  --moz-scrollbar-color: #2a9fd6 transparent !important;
   --moz-scrollbar-width: thin;
-  --webkit-scrollbar-color: #2a9fd6 transparent  !important;
+  --webkit-scrollbar-color: #2a9fd6 transparent !important;
   --webkit-scrollbar-width: thin;
 }
 
@@ -648,8 +648,8 @@ h5.headline b {
 
 .button-top {
   position: fixed;
-  bottom: 90px;
-  right: 45px;
+  bottom: 96px;
+  right: 60px;
   width: 55px;
   height: 55px;
   border-radius: 50%;
