@@ -11,6 +11,16 @@ body {
   font-family: 'Cairo', sans-serif;
 }
 
+html{
+  scrollbar-color: var(--main-color) transparent;
+  scrollbar-width: 20px;
+  --moz-scrollbar-color: var(--main-color) transparent;
+  --moz-scrollbar-width: 20px;
+  --webkit-scrollbar-color: var(--main-color) transparent;
+  --webkit-scrollbar-width: 20px;
+
+}
+
 /* navigation bar */
 
 .navbar {
