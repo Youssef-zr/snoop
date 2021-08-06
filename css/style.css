@@ -88,7 +88,6 @@ html:not([class='.card-body']) {
   max-height: 300px;
   scrollbar-width: thin;
   scrollbar-color: #2a9fd6  transparent !important;
-  scrollbar-height:10px;
   --moz-scrollbar-color: #2a9fd6  transparent !important;
   --moz-scrollbar-width: thin;
   --webkit-scrollbar-color: #2a9fd6 transparent  !important;
