@@ -11,14 +11,10 @@ body {
   font-family: 'Cairo', sans-serif;
 }
 
-html{
+html:not([class='.card-body']) {
   scrollbar-color: var(--main-color) transparent;
-  scrollbar-width: 20px;
   --moz-scrollbar-color: var(--main-color) transparent;
-  --moz-scrollbar-width: 20px;
   --webkit-scrollbar-color: var(--main-color) transparent;
-  --webkit-scrollbar-width: 20px;
-
 }
 
 /* navigation bar */
@@ -90,6 +86,13 @@ html{
 .section-tweets .card-body {
   overflow-y: scroll;
   max-height: 300px;
+  scrollbar-width: thin;
+  scrollbar-color: #2a9fd6  transparent !important;
+  scrollbar-height:10px;
+  --moz-scrollbar-color: #2a9fd6  transparent !important;
+  --moz-scrollbar-width: thin;
+  --webkit-scrollbar-color: #2a9fd6 transparent  !important;
+  --webkit-scrollbar-width: thin;
 }
 
 /* Moon map section */
