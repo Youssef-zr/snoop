@@ -655,8 +655,8 @@ h5.headline b {
 
 .button-top {
   position: fixed;
-  bottom: 96px;
-  right: 60px;
+  bottom: 40px;
+  right: 40px;
   width: 55px;
   height: 55px;
   border-radius: 50%;
