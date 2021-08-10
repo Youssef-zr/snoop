@@ -46,23 +46,29 @@ html:not([class='.card-body']) {
   color: #999;
 }
 
-.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus{
-  color:#999
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
+  color: #999
 }
-.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link.active:focus{
-color:white
+
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link.active:focus {
+  color: white
 }
+
 .social-media ul {
   margin-top: 20px;
   background: #fff;
-  padding: 8px 15px;
+  padding: 8px 15px 6px;
   border-radius: 10px;
 }
 
 .social-media ul li {
-  font-size: 25px;
+  font-size: 28px;
   color: #000;
   margin-right: 20px;
+}
+
+.social-media ul li:last-of-type {
+  margin-right: 0 !important
 }
 
 .social-media ul li a {
@@ -89,7 +95,7 @@ color:white
   border-top: 1px solid #f1f1f1;
 }
 
-.section-tweets .card-body {
+.section-tweets .card-body, .section-faq #accordion {
   overflow-y: scroll;
   max-height: 300px;
   scrollbar-width: thin;
@@ -482,13 +488,43 @@ color:white
   margin: 5px 0 0 10px;
 }
 
+/* Section FAQ Style */
+
+.section-faq #accordion {
+  padding-right: 10px;
+}
+
+.section-faq #accordion .card {
+  margin-bottom: 10px;
+  border: 1px solid #eee;
+
+}
+
+.section-faq #accordion .card .card-header {
+  border-bottom: 1px solid #777;
+  color: #fff;
+  background: #2a9fd6;
+  padding: 0
+}
+
+.section-faq #accordion .card .card-header a {
+  display: block;
+  color: inherit;
+  padding: 12px 15px 9px;
+  font-size: 16px;
+}
+
+.section-faq #accordion .card-body{
+  background:#fff;
+  color:#222
+}
+
 /* media screen */
 
 @media (min-width:1200px) {
   /* header */
   #section-header {
     width: 100%;
-    height: calc(100vh - 300px);
     position: relative;
     overflow: hidden;
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
@@ -505,6 +541,12 @@ color:white
   }
   .left-exchange {
     border-right: 3px solid var(--main-color)
+  }
+}
+
+@media (min-width:998px) {
+  #section-header {
+    padding-top: 100px !important;
   }
 }
 
@@ -651,7 +693,6 @@ h5.headline b {
 .text-capitalize {
   text-transform: capitalize;
 }
-
 
 .button-top {
   position: fixed;
