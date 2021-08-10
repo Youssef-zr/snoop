@@ -551,6 +551,9 @@ html:not([class='.card-body']) {
 }
 
 @media (max-width:998px) {
+  #section-header{
+    padding-top: 100px;
+  }
   .navbar-collapse {
     position: absolute;
     width: 100%;
