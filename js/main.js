@@ -16,6 +16,7 @@ $(() => {
 
     // disable link snoop image
     $('.not-link').click((e) => e.preventDefault())
+    
     // navigation bar
     let nav_items = $('#section-header').find(".nav-item .nav-link").not('.not-link,.not-link-disclaimer');
     nav_items.click(function (e) {
