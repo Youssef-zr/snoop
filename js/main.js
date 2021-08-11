@@ -20,14 +20,16 @@ $(() => {
     let nav_items = $('#section-header').find(".nav-item .nav-link").not('.not-link,.not-link-disclaimer');
     nav_items.click(function (e) {
         e.preventDefault();
-      
+
         $(this).addClass('active').parent('li').siblings().find('a').removeClass('active')
         $('html,body').animate({
             scrollTop: ($($(this).data('section')).offset().top) - $('nav').outerHeight() - 30
         }, 700);
 
-        // hide navigation menu
-        $('.navbar-collapse').slideToggle(500)
+        // hide menu in small screen
+        if ($(window).width() <= "968") {
+            $('.navbar-collapse').slideUp(500)
+        }
     })
 
 
