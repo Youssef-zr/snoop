@@ -605,10 +605,35 @@ html:not([class='.card-body']) {
   h5.headline b {
     top: -21px !important
   }
-  .timeline-centered .timeline-entry {
-    width: 83%;
+  .timeline-centered.timeline-sm .timeline-entry{
+    margin-bottom: 50px !important;
+    width:100%
   }
-  .button-top {
+  .timeline-centered .timeline-entry.left-aligned .timeline-entry-inner .timeline-time{
+    left: auto !important;
+    right: auto !important;
+    margin-bottom: 0px;
+    position: static;
+  }
+  .timeline-centered .timeline-entry.left-aligned .timeline-entry-inner .timeline-icon{
+    float: none;
+    position:relative;
+    transform: translateX(-45px);
+    left:50%;
+    margin-bottom:20px;
+  }
+  .timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon{
+    float: none;
+    position: relative;
+    left: 50%;
+    transform: translateX(-15px);
+    margin-bottom: 20px;
+  }
+  .timeline-centered .timeline-entry .timeline-entry-inner .timeline-time{
+    position: static;
+  }
+  .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label::after 
+  {
     display: none;
   }
 }
