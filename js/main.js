@@ -68,4 +68,9 @@ $(() => {
 
     };
     navScroll();
+
+    // disable click in coomming soon links
+    $('.section-comming').find('.box a').click((e) => {
+        e.preventDefault();
+    })
 })

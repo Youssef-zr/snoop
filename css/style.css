@@ -501,7 +501,7 @@ html:not([class='.card-body']) {
 }
 
 .section-faq #accordion .card .card-header {
-  border-bottom: 1px solid #777;
+  border-bottom: 1px solid transparent;
   color: #fff;
   background: #2a9fd6;
   padding: 0
@@ -606,14 +606,20 @@ html:not([class='.card-body']) {
     top: -21px !important
   }
   .timeline-centered.timeline-sm .timeline-entry{
-    margin-bottom: 50px !important;
+    margin-bottom: 30px !important;
     width:100%
+  }
+  .timeline-centered.timeline-sm .timeline-entry:last-of-type{
+    margin-bottom:50px !important
   }
   .timeline-centered .timeline-entry.left-aligned .timeline-entry-inner .timeline-time{
     left: auto !important;
     right: auto !important;
     margin-bottom: 0px;
     position: static;
+  }
+  .timeline-centered .timeline-entry .timeline-entry-inner .timeline-time > span{
+    color:#fff
   }
   .timeline-centered .timeline-entry.left-aligned .timeline-entry-inner .timeline-icon{
     float: none;
@@ -635,6 +641,9 @@ html:not([class='.card-body']) {
   .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label::after 
   {
     display: none;
+  }
+  .button-top{
+    display: none !important;
   }
 }
 
