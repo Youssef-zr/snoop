@@ -106,6 +106,9 @@ html:not([class='.card-body']) {
   --webkit-scrollbar-width: thin;
 }
 
+.section-tweets .card-body{
+  max-height:400px !important
+}
 /* Moon map section */
 
 .timeline-centered {
