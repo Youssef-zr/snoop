@@ -500,6 +500,7 @@ html:not([class='.card-body']) {
 .section-faq #accordion .card {
   margin-bottom: 10px;
   border: 1px solid #eee;
+  text-transform: capitalize;
 }
 
 .section-faq #accordion .card .card-header {
